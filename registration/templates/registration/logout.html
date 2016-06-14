@@ -1,0 +1,9 @@
+{% extends "registration/registration_base.html" %}
+{% load i18n %}
+
+{% block title %}{% trans "Logged out" %}{% endblock %}
+
+{% block content %}
+<h3>{% trans "Successfully logged out" %}.</h3>
+<h3>Click <a href="/account/login/">here</a> for login again.</h3>
+{% endblock %}
