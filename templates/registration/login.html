@@ -1,7 +1,7 @@
 {% extends "base.html" %}
 
 {% block title %}Login{% endblock %}
-{% block header_text %}Login{% endblock %}
+{% block header_text %}Log In{% endblock %}
 
 {% block content %}
 
@@ -10,5 +10,5 @@
         {% csrf_token %}
         <button>Login</button>
     </form>
-
+    <h2> want to join <a href="/accounts/register/"> Signup</a></h2>
 {% endblock %}

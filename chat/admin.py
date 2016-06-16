@@ -10,5 +10,5 @@ admin.site.register(
 
 admin.site.register(
     messages,
-    list_display = ["room", "message"]
+    list_display = ["room", "message","sender","message_type"]
 )

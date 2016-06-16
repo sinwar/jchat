@@ -1,21 +1,29 @@
 {% extends "base.html" %}
 
-{% block title %}MultiChat Example{% endblock %}
-{% block header_text %}MultiChat Example{% endblock %}
+{% block title %}Jchat{% endblock %}
+{% block header_text %}Jchat{% endblock %}
 
 {% block content %}
+        <div class="container-fluid">
+            <div class="row ">
 
-    <ul class="rooms">
-        {% for room in rooms %}
-            <li class="room-link" data-room-id="{{ room.id }}">{{ room }}</li>
-        {% empty %}
-            <p class="empty">No chat rooms defined. Maybe make some in the <a href="/admin/">admin</a>?</p>
-        {% endfor %}
-    </ul>
+                <div class="col-md-2 rooms pull-left">
+                    <h2>#ROOMS#</h2>
+                    {% for room in rooms %}
+                        <h2 class="room-link" data-room-id="{{ room.id }}">{{ room }}</h2>
+                    {%  empty %}
+                    <div class="col-md-12">
+                        <h3>No chat rooms defined. Maybe make some in the <a href="/admin/">admin</a></h3>
+                    </div>
+                    {%  endfor %}
+                </div>
+                <div class="col-md-10">
+                    <div id="chats">
 
-    <div id="chats">
-    </div>
-
+                    </div>
+                </div>
+            </div>
+        </div>
 {% endblock %}
 
 
@@ -27,6 +35,9 @@
             var ws_path = ws_scheme + '://' + window.location.host + "/chat/stream/";
             console.log("Connecting to " + ws_path);
             var socket = new ReconnectingWebSocket(ws_path);
+            socket.debug = true;
+            // restore the old messages
+            
 
             // Handle incoming messages
             socket.onmessage = function (message) {
@@ -122,7 +133,7 @@
             };
 
             // Room join/leave
-            $("li.room-link").click(function () {
+            $("h2.room-link").click(function () {
                 roomId = $(this).attr("data-room-id");
                 if (inRoom(roomId)) {
                     // Leave room
