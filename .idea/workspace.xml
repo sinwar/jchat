@@ -2,208 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3ea3e514-7076-44ad-958e-cc4ff8aa5c5c" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/css/bootstrap.min.css" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/CONTRIBUTING.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LICENSE" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/chat/tests.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dev.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/fixtures/sites.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/gulp/config/index.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/gulp/tasks/browserify.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/gulp/tasks/clean.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/gulp/tasks/cleanup.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/gulp/tasks/copy.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/gulp/tasks/css.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/gulp/tasks/handlebars.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/gulp/tasks/index.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/gulp/tasks/manifest.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/gulp/tasks/optimizecss.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/gulp/tasks/optimizejs.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/gulp/tasks/rev.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/gulp/tasks/test.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/gulp/tasks/xo.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/gulpfile.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/jchat/__init__.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/jchat/apps.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/jchat/asgi.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/jchat/receivers.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/jchat/routing.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/jchat/settings.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/jchat/templates/404.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/jchat/templates/500.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/jchat/templates/_account_bar.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/jchat/templates/_footer.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/jchat/templates/_scripts.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/jchat/templates/_styles.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/jchat/templates/base.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/jchat/templates/homepage.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/jchat/templates/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/jchat/templates/site_base.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/jchat/urls.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/jchat/wsgi.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/package.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/STATIC_README.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/dist/css/site-e7b87bbea0.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/dist/fonts/FontAwesome.otf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/dist/fonts/fontawesome-webfont.eot" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/dist/fonts/fontawesome-webfont.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/dist/fonts/fontawesome-webfont.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/dist/fonts/fontawesome-webfont.woff" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/dist/fonts/fontawesome-webfont.woff2" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/dist/fonts/glyphicons-halflings-regular.eot" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/dist/fonts/glyphicons-halflings-regular.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/dist/fonts/glyphicons-halflings-regular.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/dist/fonts/glyphicons-halflings-regular.woff" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/dist/fonts/glyphicons-halflings-regular.woff2" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/dist/js/site-5e73bbeeb0.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/src/hbs/_scripts.hbs" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/src/hbs/_styles.hbs" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/src/js/site.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/src/less/account.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/src/less/custom.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/src/less/site.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tox.ini" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/update.sh" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db.sqlite3" afterPath="$PROJECT_DIR$/db.sqlite3" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dump.rdb" afterPath="$PROJECT_DIR$/dump.rdb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/registration/locale/ar/LC_MESSAGES/django.mo" afterPath="$PROJECT_DIR$/registration/locale/ar/LC_MESSAGES/django.mo" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/registration/locale/bg/LC_MESSAGES/django.mo" afterPath="$PROJECT_DIR$/registration/locale/bg/LC_MESSAGES/django.mo" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/registration/locale/ca/LC_MESSAGES/django.mo" afterPath="$PROJECT_DIR$/registration/locale/ca/LC_MESSAGES/django.mo" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/registration/locale/cs/LC_MESSAGES/django.mo" afterPath="$PROJECT_DIR$/registration/locale/cs/LC_MESSAGES/django.mo" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/registration/locale/da/LC_MESSAGES/django.mo" afterPath="$PROJECT_DIR$/registration/locale/da/LC_MESSAGES/django.mo" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/registration/locale/de/LC_MESSAGES/django.mo" afterPath="$PROJECT_DIR$/registration/locale/de/LC_MESSAGES/django.mo" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/registration/locale/el/LC_MESSAGES/django.mo" afterPath="$PROJECT_DIR$/registration/locale/el/LC_MESSAGES/django.mo" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/registration/locale/en/LC_MESSAGES/django.mo" afterPath="$PROJECT_DIR$/registration/locale/en/LC_MESSAGES/django.mo" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/registration/locale/es/LC_MESSAGES/django.mo" afterPath="$PROJECT_DIR$/registration/locale/es/LC_MESSAGES/django.mo" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/registration/locale/es_AR/LC_MESSAGES/django.mo" afterPath="$PROJECT_DIR$/registration/locale/es_AR/LC_MESSAGES/django.mo" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/registration/locale/fa/LC_MESSAGES/django.mo" afterPath="$PROJECT_DIR$/registration/locale/fa/LC_MESSAGES/django.mo" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/registration/locale/fr/LC_MESSAGES/django.mo" afterPath="$PROJECT_DIR$/registration/locale/fr/LC_MESSAGES/django.mo" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/registration/locale/he/LC_MESSAGES/django.mo" afterPath="$PROJECT_DIR$/registration/locale/he/LC_MESSAGES/django.mo" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/registration/locale/hr/LC_MESSAGES/django.mo" afterPath="$PROJECT_DIR$/registration/locale/hr/LC_MESSAGES/django.mo" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/registration/locale/is/LC_MESSAGES/django.mo" afterPath="$PROJECT_DIR$/registration/locale/is/LC_MESSAGES/django.mo" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/registration/locale/it/LC_MESSAGES/django.mo" afterPath="$PROJECT_DIR$/registration/locale/it/LC_MESSAGES/django.mo" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/registration/locale/ja/LC_MESSAGES/django.mo" afterPath="$PROJECT_DIR$/registration/locale/ja/LC_MESSAGES/django.mo" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/registration/locale/ko/LC_MESSAGES/django.mo" afterPath="$PROJECT_DIR$/registration/locale/ko/LC_MESSAGES/django.mo" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/registration/locale/nb/LC_MESSAGES/django.mo" afterPath="$PROJECT_DIR$/registration/locale/nb/LC_MESSAGES/django.mo" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/registration/locale/nl/LC_MESSAGES/django.mo" afterPath="$PROJECT_DIR$/registration/locale/nl/LC_MESSAGES/django.mo" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/registration/locale/pl/LC_MESSAGES/django.mo" afterPath="$PROJECT_DIR$/registration/locale/pl/LC_MESSAGES/django.mo" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/registration/locale/pt/LC_MESSAGES/django.mo" afterPath="$PROJECT_DIR$/registration/locale/pt/LC_MESSAGES/django.mo" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/registration/locale/pt_BR/LC_MESSAGES/django.mo" afterPath="$PROJECT_DIR$/registration/locale/pt_BR/LC_MESSAGES/django.mo" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/registration/locale/ru/LC_MESSAGES/django.mo" afterPath="$PROJECT_DIR$/registration/locale/ru/LC_MESSAGES/django.mo" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/registration/locale/sl/LC_MESSAGES/django.mo" afterPath="$PROJECT_DIR$/registration/locale/sl/LC_MESSAGES/django.mo" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/registration/locale/sr/LC_MESSAGES/django.mo" afterPath="$PROJECT_DIR$/registration/locale/sr/LC_MESSAGES/django.mo" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/registration/locale/sv/LC_MESSAGES/django.mo" afterPath="$PROJECT_DIR$/registration/locale/sv/LC_MESSAGES/django.mo" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/registration/locale/tr_TR/LC_MESSAGES/django.mo" afterPath="$PROJECT_DIR$/registration/locale/tr_TR/LC_MESSAGES/django.mo" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/registration/locale/zh_CN/LC_MESSAGES/django.mo" afterPath="$PROJECT_DIR$/registration/locale/zh_CN/LC_MESSAGES/django.mo" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/registration/locale/zh_TW/LC_MESSAGES/django.mo" afterPath="$PROJECT_DIR$/registration/locale/zh_TW/LC_MESSAGES/django.mo" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/registration/static/css/dimpy.jpg" afterPath="$PROJECT_DIR$/registration/static/css/dimpy.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/registration/static/css/logo.jpg" afterPath="$PROJECT_DIR$/registration/static/css/logo.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/registration/static/css/whatsappbg.jpg" afterPath="$PROJECT_DIR$/registration/static/css/whatsappbg.jpg" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/chat/__init__.py" afterPath="$PROJECT_DIR$/chat/__init__.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/chat/admin.py" afterPath="$PROJECT_DIR$/chat/admin.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/chat/apps.py" afterPath="$PROJECT_DIR$/chat/apps.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/chat/consumers.py" afterPath="$PROJECT_DIR$/chat/consumers.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/chat/exceptions.py" afterPath="$PROJECT_DIR$/chat/exceptions.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/chat/migrations/__init__.py" afterPath="$PROJECT_DIR$/chat/migrations/__init__.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/chat/models.py" afterPath="$PROJECT_DIR$/chat/models.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/chat/routing.py" afterPath="$PROJECT_DIR$/chat/routing.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/chat/settings.py" afterPath="$PROJECT_DIR$/chat/settings.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/chat/views.py" afterPath="$PROJECT_DIR$/chat/views.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/manage.py" afterPath="$PROJECT_DIR$/manage.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/multichat/__init__.py" afterPath="$PROJECT_DIR$/multichat/__init__.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/multichat/settings.py" afterPath="$PROJECT_DIR$/multichat/settings.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/multichat/urls.py" afterPath="$PROJECT_DIR$/multichat/urls.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/multichat/wsgi.py" afterPath="$PROJECT_DIR$/multichat/wsgi.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/registration/__init__.py" afterPath="$PROJECT_DIR$/registration/__init__.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/registration/admin.py" afterPath="$PROJECT_DIR$/registration/admin.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/registration/apps.py" afterPath="$PROJECT_DIR$/registration/apps.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/registration/auth_urls.py" afterPath="$PROJECT_DIR$/registration/auth_urls.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/registration/backends/__init__.py" afterPath="$PROJECT_DIR$/registration/backends/__init__.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/registration/backends/default/__init__.py" afterPath="$PROJECT_DIR$/registration/backends/default/__init__.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/registration/backends/default/urls.py" afterPath="$PROJECT_DIR$/registration/backends/default/urls.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/registration/backends/default/views.py" afterPath="$PROJECT_DIR$/registration/backends/default/views.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/registration/backends/simple/__init__.py" afterPath="$PROJECT_DIR$/registration/backends/simple/__init__.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/registration/backends/simple/urls.py" afterPath="$PROJECT_DIR$/registration/backends/simple/urls.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/registration/backends/simple/views.py" afterPath="$PROJECT_DIR$/registration/backends/simple/views.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/registration/forms.py" afterPath="$PROJECT_DIR$/registration/forms.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/registration/locale/ar/LC_MESSAGES/django.po" afterPath="$PROJECT_DIR$/registration/locale/ar/LC_MESSAGES/django.po" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/registration/locale/bg/LC_MESSAGES/django.po" afterPath="$PROJECT_DIR$/registration/locale/bg/LC_MESSAGES/django.po" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/registration/locale/ca/LC_MESSAGES/django.po" afterPath="$PROJECT_DIR$/registration/locale/ca/LC_MESSAGES/django.po" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/registration/locale/cs/LC_MESSAGES/django.po" afterPath="$PROJECT_DIR$/registration/locale/cs/LC_MESSAGES/django.po" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/registration/locale/da/LC_MESSAGES/django.po" afterPath="$PROJECT_DIR$/registration/locale/da/LC_MESSAGES/django.po" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/registration/locale/de/LC_MESSAGES/django.po" afterPath="$PROJECT_DIR$/registration/locale/de/LC_MESSAGES/django.po" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/registration/locale/el/LC_MESSAGES/django.po" afterPath="$PROJECT_DIR$/registration/locale/el/LC_MESSAGES/django.po" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/registration/locale/en/LC_MESSAGES/django.po" afterPath="$PROJECT_DIR$/registration/locale/en/LC_MESSAGES/django.po" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/registration/locale/es/LC_MESSAGES/django.po" afterPath="$PROJECT_DIR$/registration/locale/es/LC_MESSAGES/django.po" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/registration/locale/es_AR/LC_MESSAGES/django.po" afterPath="$PROJECT_DIR$/registration/locale/es_AR/LC_MESSAGES/django.po" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/registration/locale/fa/LC_MESSAGES/django.po" afterPath="$PROJECT_DIR$/registration/locale/fa/LC_MESSAGES/django.po" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/registration/locale/fr/LC_MESSAGES/django.po" afterPath="$PROJECT_DIR$/registration/locale/fr/LC_MESSAGES/django.po" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/registration/locale/he/LC_MESSAGES/django.po" afterPath="$PROJECT_DIR$/registration/locale/he/LC_MESSAGES/django.po" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/registration/locale/hr/LC_MESSAGES/django.po" afterPath="$PROJECT_DIR$/registration/locale/hr/LC_MESSAGES/django.po" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/registration/locale/is/LC_MESSAGES/django.po" afterPath="$PROJECT_DIR$/registration/locale/is/LC_MESSAGES/django.po" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/registration/locale/it/LC_MESSAGES/django.po" afterPath="$PROJECT_DIR$/registration/locale/it/LC_MESSAGES/django.po" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/registration/locale/ja/LC_MESSAGES/django.po" afterPath="$PROJECT_DIR$/registration/locale/ja/LC_MESSAGES/django.po" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/registration/locale/ko/LC_MESSAGES/django.po" afterPath="$PROJECT_DIR$/registration/locale/ko/LC_MESSAGES/django.po" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/registration/locale/nb/LC_MESSAGES/django.po" afterPath="$PROJECT_DIR$/registration/locale/nb/LC_MESSAGES/django.po" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/registration/locale/nl/LC_MESSAGES/django.po" afterPath="$PROJECT_DIR$/registration/locale/nl/LC_MESSAGES/django.po" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/registration/locale/pl/LC_MESSAGES/django.po" afterPath="$PROJECT_DIR$/registration/locale/pl/LC_MESSAGES/django.po" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/registration/locale/pt/LC_MESSAGES/django.po" afterPath="$PROJECT_DIR$/registration/locale/pt/LC_MESSAGES/django.po" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/registration/locale/pt_BR/LC_MESSAGES/django.po" afterPath="$PROJECT_DIR$/registration/locale/pt_BR/LC_MESSAGES/django.po" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/registration/locale/ru/LC_MESSAGES/django.po" afterPath="$PROJECT_DIR$/registration/locale/ru/LC_MESSAGES/django.po" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/registration/locale/sl/LC_MESSAGES/django.po" afterPath="$PROJECT_DIR$/registration/locale/sl/LC_MESSAGES/django.po" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/registration/locale/sr/LC_MESSAGES/django.po" afterPath="$PROJECT_DIR$/registration/locale/sr/LC_MESSAGES/django.po" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/registration/locale/sv/LC_MESSAGES/django.po" afterPath="$PROJECT_DIR$/registration/locale/sv/LC_MESSAGES/django.po" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/registration/locale/tr_TR/LC_MESSAGES/django.po" afterPath="$PROJECT_DIR$/registration/locale/tr_TR/LC_MESSAGES/django.po" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/registration/locale/zh_CN/LC_MESSAGES/django.po" afterPath="$PROJECT_DIR$/registration/locale/zh_CN/LC_MESSAGES/django.po" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/registration/locale/zh_TW/LC_MESSAGES/django.po" afterPath="$PROJECT_DIR$/registration/locale/zh_TW/LC_MESSAGES/django.po" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/registration/management/__init__.py" afterPath="$PROJECT_DIR$/registration/management/__init__.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/registration/management/commands/__init__.py" afterPath="$PROJECT_DIR$/registration/management/commands/__init__.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/registration/management/commands/cleanupregistration.py" afterPath="$PROJECT_DIR$/registration/management/commands/cleanupregistration.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/registration/migrations/0001_initial.py" afterPath="$PROJECT_DIR$/registration/migrations/0001_initial.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/registration/migrations/__init__.py" afterPath="$PROJECT_DIR$/registration/migrations/__init__.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/registration/models.py" afterPath="$PROJECT_DIR$/registration/models.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/registration/signals.py" afterPath="$PROJECT_DIR$/registration/signals.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/registration/south_migrations/__init__.py" afterPath="$PROJECT_DIR$/registration/south_migrations/__init__.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/registration/static/css/blog.css" afterPath="$PROJECT_DIR$/registration/static/css/blog.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/registration/templates/base.html" afterPath="$PROJECT_DIR$/registration/templates/base.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/registration/templates/registration/activate.html" afterPath="$PROJECT_DIR$/registration/templates/registration/activate.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/registration/templates/registration/activation_complete.html" afterPath="$PROJECT_DIR$/registration/templates/registration/activation_complete.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/registration/templates/registration/activation_email.html" afterPath="$PROJECT_DIR$/registration/templates/registration/activation_email.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/registration/templates/registration/activation_email.txt" afterPath="$PROJECT_DIR$/registration/templates/registration/activation_email.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/registration/templates/registration/activation_email_subject.txt" afterPath="$PROJECT_DIR$/registration/templates/registration/activation_email_subject.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/registration/templates/registration/base.html" afterPath="$PROJECT_DIR$/registration/templates/registration/base.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/registration/templates/registration/login.html" afterPath="$PROJECT_DIR$/registration/templates/registration/login.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/registration/templates/registration/logout.html" afterPath="$PROJECT_DIR$/registration/templates/registration/logout.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/registration/templates/registration/password_change_done.html" afterPath="$PROJECT_DIR$/registration/templates/registration/password_change_done.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/registration/templates/registration/password_change_form.html" afterPath="$PROJECT_DIR$/registration/templates/registration/password_change_form.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/registration/templates/registration/password_reset_complete.html" afterPath="$PROJECT_DIR$/registration/templates/registration/password_reset_complete.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/registration/templates/registration/password_reset_confirm.html" afterPath="$PROJECT_DIR$/registration/templates/registration/password_reset_confirm.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/registration/templates/registration/password_reset_done.html" afterPath="$PROJECT_DIR$/registration/templates/registration/password_reset_done.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/registration/templates/registration/password_reset_email.html" afterPath="$PROJECT_DIR$/registration/templates/registration/password_reset_email.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/registration/templates/registration/password_reset_form.html" afterPath="$PROJECT_DIR$/registration/templates/registration/password_reset_form.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/registration/templates/registration/registration_base.html" afterPath="$PROJECT_DIR$/registration/templates/registration/registration_base.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/registration/templates/registration/registration_closed.html" afterPath="$PROJECT_DIR$/registration/templates/registration/registration_closed.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/registration/templates/registration/registration_complete.html" afterPath="$PROJECT_DIR$/registration/templates/registration/registration_complete.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/registration/templates/registration/registration_form.html" afterPath="$PROJECT_DIR$/registration/templates/registration/registration_form.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/registration/tests.py" afterPath="$PROJECT_DIR$/registration/tests.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/registration/tests/__init__.py" afterPath="$PROJECT_DIR$/registration/tests/__init__.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/registration/tests/default_backend.py" afterPath="$PROJECT_DIR$/registration/tests/default_backend.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/registration/tests/forms.py" afterPath="$PROJECT_DIR$/registration/tests/forms.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/registration/tests/forms_custom_user.py" afterPath="$PROJECT_DIR$/registration/tests/forms_custom_user.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/registration/tests/models.py" afterPath="$PROJECT_DIR$/registration/tests/models.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/registration/tests/simple_backend.py" afterPath="$PROJECT_DIR$/registration/tests/simple_backend.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/registration/tests/urls.py" afterPath="$PROJECT_DIR$/registration/tests/urls.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/registration/urls.py" afterPath="$PROJECT_DIR$/registration/urls.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/registration/users.py" afterPath="$PROJECT_DIR$/registration/users.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/registration/utils.py" afterPath="$PROJECT_DIR$/registration/utils.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/registration/views.py" afterPath="$PROJECT_DIR$/registration/views.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/requirements.txt" afterPath="$PROJECT_DIR$/requirements.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/css/style.css" afterPath="$PROJECT_DIR$/static/css/style.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/base.html" afterPath="$PROJECT_DIR$/templates/base.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/index.html" afterPath="$PROJECT_DIR$/templates/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/registration/login.html" afterPath="$PROJECT_DIR$/templates/registration/login.html" />
     </list>
     <list id="83ad1e49-f9ca-41ee-ba96-01803baf7378" name="Failed commit: Default" comment="settings.py changed" />
     <ignored path="jchat.iws" />
@@ -229,8 +30,8 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/templates/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1260">
-              <caret line="130" column="18" selection-start-line="130" selection-start-column="12" selection-end-line="130" selection-end-column="18" />
+            <state relative-caret-position="420">
+              <caret line="88" column="38" selection-start-line="88" selection-start-column="38" selection-end-line="88" selection-end-column="38" />
               <folding />
             </state>
           </provider>
@@ -249,7 +50,7 @@
       <file leaf-file-name="style.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/static/css/style.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="400">
+            <state relative-caret-position="1350">
               <caret line="90" column="22" selection-start-line="90" selection-start-column="22" selection-end-line="90" selection-end-column="22" />
               <folding />
             </state>
@@ -399,8 +200,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -513,6 +312,8 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scratches" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -807,7 +608,14 @@
       <option name="project" value="LOCAL" />
       <updated>1465337004505</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="playing with websockets">
+      <created>1466110142072</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1466110142072</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -840,7 +648,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="settings.py changed" />
     <MESSAGE value="channel configured" />
-    <option name="LAST_COMMIT_MESSAGE" value="channel configured" />
+    <MESSAGE value="playing with websockets" />
+    <option name="LAST_COMMIT_MESSAGE" value="playing with websockets" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -1045,18 +854,41 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/chat/routing.py">
+    <entry file="file://$PROJECT_DIR$/static/css/bootstrap.min.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="405">
-          <caret line="28" column="0" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
+        <state relative-caret-position="316">
+          <caret line="4" column="25947" selection-start-line="4" selection-start-column="25947" selection-end-line="4" selection-end-column="25947" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="420">
+          <caret line="88" column="38" selection-start-line="88" selection-start-column="38" selection-end-line="88" selection-end-column="38" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/chat/admin.py">
+    <entry file="file://$PROJECT_DIR$/templates/base.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="12" column="60" selection-start-line="12" selection-start-column="60" selection-end-line="12" selection-end-column="60" />
+        <state relative-caret-position="390">
+          <caret line="26" column="0" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/css/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1350">
+          <caret line="90" column="22" selection-start-line="90" selection-start-column="22" selection-end-line="90" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/chat/routing.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="405">
+          <caret line="28" column="0" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -1067,6 +899,16 @@
           <caret line="31" column="9" selection-start-line="31" selection-start-column="9" selection-end-line="31" selection-end-column="9" />
           <folding>
             <element signature="e#0#35#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/chat/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="750">
+          <caret line="55" column="108" selection-start-line="55" selection-start-column="108" selection-end-line="55" selection-end-column="108" />
+          <folding>
+            <element signature="e#0#11#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1089,44 +931,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/chat/models.py">
+    <entry file="file://$PROJECT_DIR$/chat/admin.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="750">
-          <caret line="55" column="108" selection-start-line="55" selection-start-column="108" selection-end-line="55" selection-end-column="108" />
-          <folding>
-            <element signature="e#0#11#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/static/css/bootstrap.min.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="316">
-          <caret line="4" column="25947" selection-start-line="4" selection-start-column="25947" selection-end-line="4" selection-end-column="25947" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/static/css/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="400">
-          <caret line="90" column="22" selection-start-line="90" selection-start-column="22" selection-end-line="90" selection-end-column="22" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/base.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="26" column="0" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1260">
-          <caret line="130" column="18" selection-start-line="130" selection-start-column="12" selection-end-line="130" selection-end-column="18" />
+        <state relative-caret-position="150">
+          <caret line="12" column="60" selection-start-line="12" selection-start-column="60" selection-end-line="12" selection-end-column="60" />
           <folding />
         </state>
       </provider>

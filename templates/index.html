@@ -52,6 +52,23 @@
                 // Handle joining
                 if (data.join) {
                     console.log("Joining room " + data.join);
+
+                    // at a time a user can be logged in one room
+                    // remove for multi room logged in
+                    // check if the user is logged in other room or not
+                    if($("#chats").find(".room").html() != undefined){
+                        console.log("you are already in room");
+
+                            // remove the user from room if the user is logged in
+                            roomId = $("#chats .room").attr("id").split("-")[1];
+                            //$("h2.room-link").removeClass("joined");              small bug here
+                            socket.send(JSON.stringify({
+                                "command": "leave",
+                                "room": roomId
+                            }));
+                    }
+
+                    // html added when the user joins the room
                     var roomdiv = $(
                             "<div class='room' id='room-" + data.join + "'>" +
                             "<h2>" + data.title + "</h2>" +
@@ -69,6 +86,7 @@
                         roomdiv.find("input").val("");
                         return false;
                     });
+                    // append the html
                     $("#chats").append(roomdiv);
                     // Handle leaving
                 } else if (data.leave) {
