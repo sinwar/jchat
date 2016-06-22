@@ -111,9 +111,9 @@ p {
         font-weight: bold;
     }
     #chats .messages {
-        height: 200px;
+        height: 600px;
         overflow: auto;
-        background: #eee;
+        background: #c4e3f3;
         margin: 2px 0 5px 0;
     }
     #chats .username {
@@ -139,3 +139,10 @@ p {
         font-weight: bold;
         font-style: italic;
     }
+
+.message{
+    background-color: snow;
+    margin-bottom: 1%;
+    font-size: larger;
+    font-family: FontAwesome;
+}

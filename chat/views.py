@@ -1,4 +1,5 @@
 from django.shortcuts import render
+import json
 from django.contrib.auth.decorators import login_required
 from .models import Room, messages
 
@@ -17,17 +18,15 @@ def index(request):
     room = []
     msg = []
     msg_type = []
-    sender = []
+    mesgs = []
     for i in msgs:
-        room.append(i.room)
-        sender.append(i.sender)
-        msg.append(i.message)
-        msg_type.append(i.message_type)
+        k = json.dumps({'room':i.room.id, 'sender':i.sender, 'message':i.message, 'msg_type':i.message_type})
+        mesgs.append(k)
 
-    mesgs = zip(room, sender, msg, msg_type)
+    httpoutput = json.dumps(dict({'messages': mesgs}))
 
     # Render that in the index template
     return render(request, "index.html", {
         "rooms": rooms,
-        #"messages":mesgs
+        "messages":httpoutput
     })

@@ -19,7 +19,13 @@
                 </div>
                 <div class="col-md-10">
                     <div id="chats">
+                        <div class="room">
+                            <h2 class="text-center"> Join a room !</h2>
+                            <div class="messages row">
 
+                            </div>
+                            <form role='form'><input class="input-lg" style="width: 90%"><button class="btn btn-lg btn-info" style="margin-left: 3%;">Send</button></form>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -36,8 +42,29 @@
             console.log("Connecting to " + ws_path);
             var socket = new ReconnectingWebSocket(ws_path);
             socket.debug = true;
-            // restore the old messages
-            
+
+            $(".room").find("form").on("submit", function () {
+
+                    if($("#chats").find(".room").attr("id") != undefined) {
+                        var roomk = $("#chats .room").attr("id").split("-")[1];
+                    }
+                    else{
+                        alert("Enter a room");
+                    }
+                    if($(".room").find("input").val() == "")
+                    {
+                        console.log('Enter some value');
+                    }
+                    else {
+                        socket.send(JSON.stringify({
+                            "command": "send",
+                            "room": roomk,
+                            "message": $(".room").find("input").val()
+                        }));
+                        $(".room").find("input").val("");
+                    }
+                    return false;
+            });
 
             // Handle incoming messages
             socket.onmessage = function (message) {
@@ -45,6 +72,9 @@
                 console.log("Got websocket message " + message.data);
                 var data = JSON.parse(message.data);
                 // Handle errors
+
+                    // Hook up send button to send a message
+
                 if (data.error) {
                     alert(data.error);
                     return;
@@ -53,45 +83,87 @@
                 if (data.join) {
                     console.log("Joining room " + data.join);
 
-                    // at a time a user can be logged in one room
-                    // remove for multi room logged in
-                    // check if the user is logged in other room or not
-                    if($("#chats").find(".room").html() != undefined){
-                        console.log("you are already in room");
 
-                            // remove the user from room if the user is logged in
-                            roomId = $("#chats .room").attr("id").split("-")[1];
-                            //$("h2.room-link").removeClass("joined");              small bug here
-                            socket.send(JSON.stringify({
-                                "command": "leave",
-                                "room": roomId
-                            }));
-                    }
+
+                    //$(".messages").prepend(oldmessages);
 
                     // html added when the user joins the room
                     var roomdiv = $(
-                            "<div class='room' id='room-" + data.join + "'>" +
-                            "<h2>" + data.title + "</h2>" +
-                            "<div class='messages'></div>" +
-                            "<form><input><button>Send</button></form>" +
-                            "</div>"
+                            "<h2 class='text-center'>" + data.title + "</h2>"
+
                     );
-                    // Hook up send button to send a message
-                    roomdiv.find("form").on("submit", function () {
-                        socket.send(JSON.stringify({
-                            "command": "send",
-                            "room": data.join,
-                            "message": roomdiv.find("input").val()
-                        }));
-                        roomdiv.find("input").val("");
-                        return false;
-                    });
+
                     // append the html
-                    $("#chats").append(roomdiv);
+                    $(".room").attr("id",'room-'+data.join);
+                    $(".room h2").replaceWith(roomdiv);
+
+                    console.log("Restorinng older messages");
+
+                    // restore the old messages
+                    var roomID = data.join;
+                    var oldmessage = {{ messages|safe }}; //safe data django template filter
+                    var oldmsgarray = oldmessage.messages;
+                    var old_msg = "";
+
+                    for(var i=0; i<oldmsgarray.length;i++) {
+                        var k = JSON.parse(oldmsgarray[i]);
+                        var msgdiv = $("#room-" + data.join + " .messages");
+                        if (roomID == k.room) {
+                            switch (k.msg_type) {
+                                case 0:
+                                    // Message
+                                    old_msg = "<div class='message'>" +
+                                            "<span class='username'>" + k.sender + "</span>" +
+                                            "<span class='body'>" + k.message + "</span>" +
+                                            "</div>";
+                                    break;
+                                case 1:
+                                    // Warning / Advice messages
+                                    old_msg = "<div class='contextual-message text-warning'>" + k.message +
+                                            "</div>";
+                                    break;
+                                case 2:
+                                    // Alert / Danger messages
+                                    old_msg = "<div class='contextual-message text-danger'>" + k.message +
+                                            "</div>";
+                                    break;
+                                case 3:
+                                    // "Muted" messages
+                                    old_msg = "<div class='contextual-message text-muted'>" + k.message +
+                                            "</div>";
+                                    break;
+                                case 4:
+                                    // User joined room
+                                    old_msg = "<div class='contextual-message text-muted'>" + k.sender +
+                                            " joined the room!" +
+                                            "</div>";
+                                    break;
+                                case 5:
+                                    // User left room
+                                    old_msg = "<div class='contextual-message text-muted'>" + k.sender +
+                                            " left the room!" +
+                                            "</div>";
+                                    break;
+                                default:
+                                    console.log("Unsupported message type!");
+                                    return;
+                            }
+
+                            msgdiv.append(old_msg);
+
+                            msgdiv.scrollTop(msgdiv.prop("scrollHeight"));
+                        }
+                    }
                     // Handle leaving
                 } else if (data.leave) {
+
                     console.log("Leaving room " + data.leave);
-                    $("#room-" + data.leave).remove();
+
+                    $(".room").removeAttr("id");
+                    $(".room h2").replaceWith("<h2 class='text-center'>Join a room</h2>");
+                    $(".messages").replaceWith("<div class='messages'></div>");
+
+
                     // Handle getting a message
                 } else if (data.message || data.msg_type != 0) {
                     var msgdiv = $("#room-" + data.room + " .messages");
@@ -150,8 +222,10 @@
                 return $("#room-" + roomId).length > 0;
             };
 
+
             // Room join/leave
             $("h2.room-link").click(function () {
+
                 roomId = $(this).attr("data-room-id");
                 if (inRoom(roomId)) {
                     // Leave room
@@ -160,8 +234,28 @@
                         "command": "leave",
                         "room": roomId
                     }));
-                } else {
+                }
+
+                else
+                {
+
                     // Join room
+                    // at a time a user can be logged in one room
+                    // remove for multi room logged in
+                    // check if the user is logged in other room or not
+                    if($("#chats").find(".room").attr("id") != undefined){
+                        console.log("you are already in room");
+
+                            // remove the user from room if the user is logged in
+                            var roomd = $("#chats .room").attr("id").split("-")[1];
+                            $(".rooms h2").removeClass("joined");
+
+                            socket.send(JSON.stringify({
+                                "command": "leave",
+                                "room": roomd
+                            }));
+                    }
+
                     $(this).addClass("joined");
                     socket.send(JSON.stringify({
                         "command": "join",
