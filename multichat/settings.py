@@ -51,6 +51,8 @@ redis_host = os.environ.get('REDIS_HOST', 'localhost')
 
 # Channel layer definitions
 # http://channels.readthedocs.org/en/latest/deploying.html#setting-up-a-channel-backend
+# asgi server is used as interface server
+# another way is inmemory which provides no cross process channel transportation
 CHANNEL_LAYERS = {
     "default": {
         # This example app uses the Redis channel layer implementation asgi_redis

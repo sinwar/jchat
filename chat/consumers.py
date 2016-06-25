@@ -17,6 +17,7 @@ from .exceptions import ClientError
 @channel_session_user_from_http
 def ws_connect(message):
     # Initialise their session
+    # like django session
     message.channel_session['rooms'] = []
 
 
@@ -69,7 +70,9 @@ def chat_join(message):
 
     # OK, add them in. The websocket_group is what we'll send messages
     # to so that everyone in the chat room gets them.
+    # reply channel is unique channel for each client
     room.websocket_group.add(message.reply_channel)
+    # all the rooms in session + newly added room in session
     message.channel_session['rooms'] = list(set(message.channel_session['rooms']).union([room.id]))
     # Send a message back that will prompt them to open the room
     # Done server-side so that we could, for example, make people
@@ -92,7 +95,9 @@ def chat_leave(message):
     if NOTIFY_USERS_ON_ENTER_OR_LEAVE_ROOMS:
         room.send_message(None, message.user, MSG_TYPE_LEAVE)
 
+    # discard room from group
     room.websocket_group.discard(message.reply_channel)
+    # all the rooms in session - the room to be removed from session
     message.channel_session['rooms'] = list(set(message.channel_session['rooms']).difference([room.id]))
     # Send a message back that will prompt them to close the room
     message.reply_channel.send({
@@ -106,10 +111,10 @@ def chat_leave(message):
 @catch_client_error
 def chat_send(message):
     # Check that the user in the room
-    """
+
     if int(message['room']) not in message.channel_session['rooms']:
         raise ClientError("ROOM_ACCESS_DENIED")
-    """
+
     # Find the room they're sending to, check perms
     room = get_room_or_error(message["room"], message.user)
     # Send the message along
