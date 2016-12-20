@@ -1,7 +1,7 @@
+from channels import Group
 import json
 from django.db import models
 from django.utils.six import python_2_unicode_compatible
-from channels import Group
 
 from .settings import MSG_TYPE_MESSAGE, MSG_TYPE_ENTER, MSG_TYPE_LEAVE, MSG_TYPE_ALERT, MSG_TYPE_WARNING, MSG_TYPE_MUTED
 
