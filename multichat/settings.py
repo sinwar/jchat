@@ -11,6 +11,7 @@ https://docs.djangoproject.com/en/dev/ref/settings/
 """
 
 import os
+import dj_database_url
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -123,3 +124,13 @@ STATICFILES_DIRS = [
 ]
 
 ACCOUNT_ACTIVATION_DAYS = 7
+
+# for heroku
+
+db_from_env = dj_database_url.config()
+DATABASES['default'].update(db_from_env)
+
+# Simplified static file serving.
+# https://warehouse.python.org/project/whitenoise/
+
+STATICFILES_STORAGE = 'whitenoise.django.GzipManifestStaticFilesStorage'
